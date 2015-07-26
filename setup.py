@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='contoml',
     packages=find_packages(),
-    version='master',
+    version='0.19',
     description='Consistent TOML for Python',
     author='Amr Hassan',
     author_email='amr.hassan@gmail.com',
