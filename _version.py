@@ -1,2 +1,2 @@
 
-VERSION = 'master'
+VERSION = '0.23'
