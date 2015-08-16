@@ -1,9 +1,8 @@
 from contoml.errors import InvalidValueError
 from contoml.file.file import TOMLFile
-from contoml._version import VERSION
+import pkg_resources  # from setuptools
 
-
-__version__ = VERSION
+__version__ = pkg_resources.require("contoml")[0].version
 
 
 def new():
