@@ -1,11 +1,10 @@
-from contoml import parser, lexer
+from prettytoml import parser, lexer
 from contoml.file import toplevels
-from contoml.parser.tokenstream import TokenStream
 
 
 def test_entry_extraction():
     text = open('sample.toml').read()
-    elements = parser.parse_token_stream(TokenStream(lexer.tokenize(text)))
+    elements = parser.parse_tokens(lexer.tokenize(text))
 
     e = tuple(toplevels.identify(elements))
 

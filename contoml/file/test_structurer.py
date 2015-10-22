@@ -1,8 +1,8 @@
-from contoml import lexer, parser
+from prettytoml import lexer, parser
 from contoml.file import toplevels
-from contoml.parser import elementsanitizer
+from prettytoml.parser import elementsanitizer
 from contoml.file.structurer import NamedDict, structure
-from contoml.parser.tokenstream import TokenStream
+from prettytoml.parser.tokenstream import TokenStream
 
 
 def test_NamedDict():
@@ -17,8 +17,8 @@ def test_NamedDict():
 
 
 def test_structure():
-    tokens = TokenStream(lexer.tokenize(open('sample.toml').read()))
-    elements = elementsanitizer.sanitize(parser.parse_token_stream(tokens))
+    tokens = lexer.tokenize(open('sample.toml').read())
+    elements = elementsanitizer.sanitize(parser.parse_tokens(tokens))
     entries_ = tuple(toplevels.identify(elements))
 
     s = structure(entries_)

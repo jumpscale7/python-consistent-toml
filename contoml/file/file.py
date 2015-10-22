@@ -1,11 +1,9 @@
-from contoml.elements import traversal
-from contoml.errors import NoArrayFoundError, DuplicateKeysError, DuplicateTablesError
+from prettytoml.errors import NoArrayFoundError, DuplicateKeysError, DuplicateTablesError
 from contoml.file import structurer, toplevels, raw
 from contoml.file.array import ArrayOfTables
 from contoml.file.freshtable import FreshTable
-import contoml.elements.factory as element_factory
-from contoml import prettifier
-import contoml.util as util
+import prettytoml.elements.factory as element_factory
+import prettytoml.util as util
 
 
 class TOMLFile:
@@ -260,13 +258,6 @@ class TOMLFile:
         else:
             # It's an anonymous table
             self.prepend_elements([fresh_table, element_factory.create_newline_element()])
-
-    def prettify(self, prettifiers=prettifier.ALL):
-        """
-        Reformats this TOML file using the specified consistent set of formatting rules.
-        """
-        prettifier.prettify(self, prettifiers)
-        self._recreate_navigable()
 
     @property
     def elements(self):

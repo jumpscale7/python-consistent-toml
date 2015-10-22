@@ -1,7 +1,8 @@
-from contoml.elements.table import TableElement
-from contoml.errors import InvalidValueError
+from prettytoml.elements.table import TableElement
+from prettytoml.errors import InvalidValueError
 from contoml.file.freshtable import FreshTable
-from contoml import util
+from prettytoml import util
+
 
 class ArrayOfTables(list):
 

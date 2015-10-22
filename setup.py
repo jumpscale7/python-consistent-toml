@@ -16,10 +16,11 @@ setup(
         'Programming Language :: Python :: 3.5'
     ],
     install_requires=[
-        'six',
-        'strict_rfc3339',
-        'iso8601',
-        'pytz',
-        'timestamp'
+        # 'six',
+        # 'strict_rfc3339',
+        # 'iso8601',
+        # 'pytz',
+        # 'timestamp',
+        'prettytoml',
     ]
 )

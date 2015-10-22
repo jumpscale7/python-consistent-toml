@@ -2,9 +2,9 @@
     Top-level entries in a TOML file.
 """
 
-from contoml import elements
-from contoml.elements import TableElement, TableHeaderElement
-from contoml.file.peekableit import PeekableIterator
+from prettytoml import elements
+from prettytoml.elements import TableElement, TableHeaderElement
+from .peekableit import PeekableIterator
 
 
 class TopLevel:

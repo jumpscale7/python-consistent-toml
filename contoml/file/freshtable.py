@@ -1,4 +1,4 @@
-from contoml.elements.table import TableElement
+from prettytoml.elements.table import TableElement
 
 
 class FreshTable(TableElement):

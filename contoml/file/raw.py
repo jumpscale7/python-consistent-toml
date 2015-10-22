@@ -1,4 +1,4 @@
-from contoml.elements.abstracttable import AbstractTable
+from prettytoml.elements.abstracttable import AbstractTable
 
 
 def to_raw(x):
