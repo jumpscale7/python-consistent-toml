@@ -7,7 +7,7 @@
 [![Join the chat at https://gitter.im/Jumpscale/python-consistent-toml](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Jumpscale/python-consistent-toml?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-A Python module for manipulating data within [TOML](https://github.com/toml-lang/toml) files without messing up their nice formating. This is achieved by preserving the parsed/constructed TOML data structures as lexical tokens internally and having the data manipulations performed directly on the tokens.
+A Python module for updating data within [TOML](https://github.com/toml-lang/toml) files without messing up their nice formating. This is achieved by preserving the parsed/constructed TOML data structures as lexical tokens internally and having the data manipulations performed directly on the tokens.
 
 ## Installation ##
 ```bash
